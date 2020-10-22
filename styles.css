@@ -1,0 +1,40 @@
+#container {
+  position: absolute;
+  height: 200px;
+  border: 3px solid black;
+  top: calc(50% - 100px);
+  left: calc(50% - 350px);
+  overflow: hidden;
+}
+
+.whitenote {
+  height: 100%;
+  width: 50px;
+  background: white;
+  float: left;
+  border-right: 1px solid black;
+  position: relative;
+}
+
+.blacknote {
+  position: absolute;
+  height: 65%;
+  width: 55%;
+  z-index: 1;
+  background: #777;
+  left: 71%;
+}
+
+form {
+  width: 500px;
+  margin: 500px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  display: block;
+  width: 700px;
+  margin: 20px auto;
+  text-align: center;
+}

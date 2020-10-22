@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="container"></div>
+  <form name="Choice_form">
+    <label><input type="radio" name="choice" value="btn4">1 measure (♩=60)</label>
+    <label><input type="radio" name="choice" value="btn8">8th Note (♩=60)</label>
+    <button class="btn" onclick="Choice()">Decision</button>
+  </form>
+  <div class="reloadButton">
+    <p>
+      Restoring to the former condition →
+      <button class="reload" onclick="window.location.reload();">Reload</button>
+    </p>
+  </div>
+  
+  <!-- Tone.js cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.60/Tone.js" integrity="sha512-+luS5BFaFcKtV15UoNKA+FYZS9K4PkkE4yK2mO/g+99/24OJikgxvEhGRQs7YOPNpPw7hBxv1aQfS1CZryD3qQ==" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>
